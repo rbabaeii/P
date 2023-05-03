@@ -222,15 +222,15 @@ MEDIA_URL = '/media/' # Public URL at the browser
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['http://rpniaz.ir' , 'https://rpniaz.ir',
-                        'http://www.rpniaz.ir' , 'https://www.rpniaz.ir']
+CSRF_TRUSTED_ORIGINS = ['http://localhost:8000' , 'https://localhost:8000',
+                        'http://www.localhost:8000' , 'https://localhost:8000']
 
 CSRF_ORIGIN_ALLOW_ALL = True
 
-FTP_STORAGE_URL = 'dl.rpniaz.ir'
+FTP_STORAGE_URL = ''
 FTP_STORAGE_ADDRESS = f'http://{FTP_STORAGE_URL}'
-FTP_STORAGE_IP = '194.147.142.52'
-FTP_STORAGE_USER = 'pz15592'
-FTP_STORAGE_PASS = 'RMrGRe6P'
+FTP_STORAGE_IP = ''
+FTP_STORAGE_USER = ''
+FTP_STORAGE_PASS = ''
 FTP_STORAGE_PORT = 21
 FTP_STORAGE_LOCATION = f'ftp://{FTP_STORAGE_USER}:{FTP_STORAGE_PASS}@{FTP_STORAGE_IP}:{FTP_STORAGE_PORT}'
